@@ -15,24 +15,29 @@
             <h1 class="text-primary text-center">eDnevnik</h1>
         </article>
         <article class="col-md-12 m-auto py-5">
-            <div class="col-md-6 offset-md-3 form-group">
-                <label for="username" class="text-primary">Username</label>
-                <input class="form-control" type="text" id="username">
-            </div>
-            <div class="col-md-6 offset-md-3 form-group">
-                <label for="password" class="text-primary">Password</label>
-                <input class="form-control" type="text" id="password">
-                <div class="invalid-feedback">
-                    Password not strong enough
+            <form class="form-horizontal" role="form" action="formProcess.php" method="post" enctype="multipart/form-data">
+                <div class="col-md-6 offset-md-3 form-group">
+                    <label for="username" class="text-primary">Username</label>
+                    <input class="form-control" type="text" id="username">
                 </div>
-            </div>
-            <div class="col-md-6 offset-md-3 form-group">
-                <label for="password2" class="text-primary">Confirm Password</label>
-                <input class="form-control" type="text" id="password2">
-                <div class="invalid-feedback">
-                    Password does not match
+                <div class="col-md-6 offset-md-3 form-group">
+                    <label for="password" class="text-primary">Password</label>
+                    <input class="form-control" type="text" id="password">
+                    <div class="invalid-feedback">
+                        Password not strong enough
+                    </div>
                 </div>
-            </div>
+                <div class="col-md-6 offset-md-3 form-group">
+                    <label for="password2" class="text-primary">Confirm Password</label>
+                    <input class="form-control" type="text" id="password2">
+                    <div class="invalid-feedback">
+                        Password does not match
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <button type="submit" class="btn btn-primary" name="login">Login</button>
+                </div>
+            </form>
         </article>
     </main>
 
